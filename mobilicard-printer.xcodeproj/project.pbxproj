@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		081BB065747E453E17D49C06 /* Pods_mobilicard_printerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2E440DCA7DC8BC45C28012 /* Pods_mobilicard_printerTests.framework */; };
+		38534CEB4F604E9452C03A99 /* Pods_mobilicard_printerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3ADE91D95E4AB255C2009C /* Pods_mobilicard_printerUITests.framework */; };
+		A64128C86404A70EB3BE5DA0 /* Pods_mobilicard_printer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E9996D053AEB8077858A84 /* Pods_mobilicard_printer.framework */; };
+		B537EA59212AF8F4003A353A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537EA58212AF8F4003A353A /* AppDelegate.swift */; };
+		B537EA5B212AF8F4003A353A /* FrontPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537EA5A212AF8F4003A353A /* FrontPageViewController.swift */; };
+		B537EA5E212AF8F4003A353A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B537EA5C212AF8F4003A353A /* Main.storyboard */; };
+		B537EA61212AF8F4003A353A /* mobilicard_printer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B537EA5F212AF8F4003A353A /* mobilicard_printer.xcdatamodeld */; };
+		B537EA63212AF8F7003A353A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B537EA62212AF8F7003A353A /* Assets.xcassets */; };
+		B537EA66212AF8F7003A353A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B537EA64212AF8F7003A353A /* LaunchScreen.storyboard */; };
+		B537EA71212AF8F8003A353A /* mobilicard_printerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537EA70212AF8F8003A353A /* mobilicard_printerTests.swift */; };
+		B537EA7C212AF8F8003A353A /* mobilicard_printerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537EA7B212AF8F8003A353A /* mobilicard_printerUITests.swift */; };
+		B537EA8E212B4486003A353A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537EA8D212B4486003A353A /* ListViewController.swift */; };
+		B537EA90212B5C2C003A353A /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537EA8F212B5C2C003A353A /* ListTableViewCell.swift */; };
+		B5CED53E212E0B4100131C8C /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CED53D212E0B4000131C8C /* JobModel.swift */; };
+		B5CED540212EBC6000131C8C /* TestData2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CED53F212EBC6000131C8C /* TestData2.swift */; };
+		B5CED542212EDABC00131C8C /* Ping.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CED541212EDABC00131C8C /* Ping.swift */; };
+		B5CED544213C5CC000131C8C /* GetJobData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CED543213C5CC000131C8C /* GetJobData.swift */; };
+		B5CED546213C819000131C8C /* Backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CED545213C819000131C8C /* Backup.swift */; };
+		B5E275432157C35600B00AE8 /* ReleaseJobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E275422157C35600B00AE8 /* ReleaseJobModel.swift */; };
+		B5E2754721583D7200B00AE8 /* SelectAllTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E2754621583D7200B00AE8 /* SelectAllTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B537EA6D212AF8F8003A353A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B537EA4D212AF8F4003A353A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B537EA54212AF8F4003A353A;
+			remoteInfo = "mobilicard-printer";
+		};
+		B537EA78212AF8F8003A353A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B537EA4D212AF8F4003A353A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B537EA54212AF8F4003A353A;
+			remoteInfo = "mobilicard-printer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4284A415DC83ACF1028CCE5B /* Pods-mobilicard-printer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilicard-printer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobilicard-printer/Pods-mobilicard-printer.debug.xcconfig"; sourceTree = "<group>"; };
+		4C2E440DCA7DC8BC45C28012 /* Pods_mobilicard_printerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobilicard_printerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		609B862E8DE990F7B7844157 /* Pods-mobilicard-printerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilicard-printerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobilicard-printerUITests/Pods-mobilicard-printerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		63C2597D61BB56CA7E6B375A /* Pods-mobilicard-printerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilicard-printerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobilicard-printerUITests/Pods-mobilicard-printerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6E3ADE91D95E4AB255C2009C /* Pods_mobilicard_printerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobilicard_printerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7129DE58AB1CB0EDE14F9CCB /* Pods-mobilicard-printerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilicard-printerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobilicard-printerTests/Pods-mobilicard-printerTests.release.xcconfig"; sourceTree = "<group>"; };
+		93E9996D053AEB8077858A84 /* Pods_mobilicard_printer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobilicard_printer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC29786F8C4DF50319B049D1 /* Pods-mobilicard-printerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilicard-printerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobilicard-printerTests/Pods-mobilicard-printerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B537EA55212AF8F4003A353A /* mobilicard-printer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobilicard-printer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B537EA58212AF8F4003A353A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B537EA5A212AF8F4003A353A /* FrontPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontPageViewController.swift; sourceTree = "<group>"; };
+		B537EA5D212AF8F4003A353A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B537EA60212AF8F4003A353A /* mobilicard_printer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mobilicard_printer.xcdatamodel; sourceTree = "<group>"; };
+		B537EA62212AF8F7003A353A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B537EA65212AF8F7003A353A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B537EA67212AF8F7003A353A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B537EA6C212AF8F8003A353A /* mobilicard-printerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobilicard-printerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B537EA70212AF8F8003A353A /* mobilicard_printerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobilicard_printerTests.swift; sourceTree = "<group>"; };
+		B537EA72212AF8F8003A353A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B537EA77212AF8F8003A353A /* mobilicard-printerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobilicard-printerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B537EA7B212AF8F8003A353A /* mobilicard_printerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobilicard_printerUITests.swift; sourceTree = "<group>"; };
+		B537EA7D212AF8F8003A353A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B537EA8D212B4486003A353A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		B537EA8F212B5C2C003A353A /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		B5CED53D212E0B4000131C8C /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
+		B5CED53F212EBC6000131C8C /* TestData2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData2.swift; sourceTree = "<group>"; };
+		B5CED541212EDABC00131C8C /* Ping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ping.swift; sourceTree = "<group>"; };
+		B5CED543213C5CC000131C8C /* GetJobData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetJobData.swift; sourceTree = "<group>"; };
+		B5CED545213C819000131C8C /* Backup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backup.swift; sourceTree = "<group>"; };
+		B5E275422157C35600B00AE8 /* ReleaseJobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseJobModel.swift; sourceTree = "<group>"; };
+		B5E2754621583D7200B00AE8 /* SelectAllTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAllTableViewCell.swift; sourceTree = "<group>"; };
+		FA11E952FCE56D2AAC37DC97 /* Pods-mobilicard-printer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilicard-printer.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobilicard-printer/Pods-mobilicard-printer.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B537EA52212AF8F4003A353A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A64128C86404A70EB3BE5DA0 /* Pods_mobilicard_printer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B537EA69212AF8F8003A353A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081BB065747E453E17D49C06 /* Pods_mobilicard_printerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B537EA74212AF8F8003A353A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38534CEB4F604E9452C03A99 /* Pods_mobilicard_printerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BDBD44409A74FE58B1F1222 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4284A415DC83ACF1028CCE5B /* Pods-mobilicard-printer.debug.xcconfig */,
+				FA11E952FCE56D2AAC37DC97 /* Pods-mobilicard-printer.release.xcconfig */,
+				AC29786F8C4DF50319B049D1 /* Pods-mobilicard-printerTests.debug.xcconfig */,
+				7129DE58AB1CB0EDE14F9CCB /* Pods-mobilicard-printerTests.release.xcconfig */,
+				63C2597D61BB56CA7E6B375A /* Pods-mobilicard-printerUITests.debug.xcconfig */,
+				609B862E8DE990F7B7844157 /* Pods-mobilicard-printerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B537EA4C212AF8F4003A353A = {
+			isa = PBXGroup;
+			children = (
+				B537EA57212AF8F4003A353A /* mobilicard-printer */,
+				B537EA6F212AF8F8003A353A /* mobilicard-printerTests */,
+				B537EA7A212AF8F8003A353A /* mobilicard-printerUITests */,
+				B537EA56212AF8F4003A353A /* Products */,
+				9BDBD44409A74FE58B1F1222 /* Pods */,
+				D2D3D7155C7B1DB55E0194B4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B537EA56212AF8F4003A353A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B537EA55212AF8F4003A353A /* mobilicard-printer.app */,
+				B537EA6C212AF8F8003A353A /* mobilicard-printerTests.xctest */,
+				B537EA77212AF8F8003A353A /* mobilicard-printerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B537EA57212AF8F4003A353A /* mobilicard-printer */ = {
+			isa = PBXGroup;
+			children = (
+				B537EA89212AFEC1003A353A /* Models */,
+				B537EA8B212AFED9003A353A /* Views */,
+				B537EA8C212AFEE5003A353A /* Controllers */,
+				B537EA58212AF8F4003A353A /* AppDelegate.swift */,
+				B5CED543213C5CC000131C8C /* GetJobData.swift */,
+				B5CED545213C819000131C8C /* Backup.swift */,
+				B5CED541212EDABC00131C8C /* Ping.swift */,
+				B5CED53F212EBC6000131C8C /* TestData2.swift */,
+				B537EA62212AF8F7003A353A /* Assets.xcassets */,
+				B537EA67212AF8F7003A353A /* Info.plist */,
+				B537EA5F212AF8F4003A353A /* mobilicard_printer.xcdatamodeld */,
+			);
+			path = "mobilicard-printer";
+			sourceTree = "<group>";
+		};
+		B537EA6F212AF8F8003A353A /* mobilicard-printerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B537EA70212AF8F8003A353A /* mobilicard_printerTests.swift */,
+				B537EA72212AF8F8003A353A /* Info.plist */,
+			);
+			path = "mobilicard-printerTests";
+			sourceTree = "<group>";
+		};
+		B537EA7A212AF8F8003A353A /* mobilicard-printerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B537EA7B212AF8F8003A353A /* mobilicard_printerUITests.swift */,
+				B537EA7D212AF8F8003A353A /* Info.plist */,
+			);
+			path = "mobilicard-printerUITests";
+			sourceTree = "<group>";
+		};
+		B537EA89212AFEC1003A353A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5CED53D212E0B4000131C8C /* JobModel.swift */,
+				B5E275422157C35600B00AE8 /* ReleaseJobModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B537EA8B212AFED9003A353A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B537EA5C212AF8F4003A353A /* Main.storyboard */,
+				B537EA64212AF8F7003A353A /* LaunchScreen.storyboard */,
+				B537EA8F212B5C2C003A353A /* ListTableViewCell.swift */,
+				B5E2754621583D7200B00AE8 /* SelectAllTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B537EA8C212AFEE5003A353A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B537EA5A212AF8F4003A353A /* FrontPageViewController.swift */,
+				B537EA8D212B4486003A353A /* ListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D2D3D7155C7B1DB55E0194B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93E9996D053AEB8077858A84 /* Pods_mobilicard_printer.framework */,
+				4C2E440DCA7DC8BC45C28012 /* Pods_mobilicard_printerTests.framework */,
+				6E3ADE91D95E4AB255C2009C /* Pods_mobilicard_printerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B537EA54212AF8F4003A353A /* mobilicard-printer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B537EA80212AF8F8003A353A /* Build configuration list for PBXNativeTarget "mobilicard-printer" */;
+			buildPhases = (
+				D9375EB5CEBD531CD7D1C0C2 /* [CP] Check Pods Manifest.lock */,
+				B537EA51212AF8F4003A353A /* Sources */,
+				B537EA52212AF8F4003A353A /* Frameworks */,
+				B537EA53212AF8F4003A353A /* Resources */,
+				FDFCF5B2613BACCE0A338CC8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mobilicard-printer";
+			productName = "mobilicard-printer";
+			productReference = B537EA55212AF8F4003A353A /* mobilicard-printer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B537EA6B212AF8F8003A353A /* mobilicard-printerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B537EA83212AF8F8003A353A /* Build configuration list for PBXNativeTarget "mobilicard-printerTests" */;
+			buildPhases = (
+				9784CD1C76BA2DAFF5A6B8A7 /* [CP] Check Pods Manifest.lock */,
+				B537EA68212AF8F8003A353A /* Sources */,
+				B537EA69212AF8F8003A353A /* Frameworks */,
+				B537EA6A212AF8F8003A353A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B537EA6E212AF8F8003A353A /* PBXTargetDependency */,
+			);
+			name = "mobilicard-printerTests";
+			productName = "mobilicard-printerTests";
+			productReference = B537EA6C212AF8F8003A353A /* mobilicard-printerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B537EA76212AF8F8003A353A /* mobilicard-printerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B537EA86212AF8F8003A353A /* Build configuration list for PBXNativeTarget "mobilicard-printerUITests" */;
+			buildPhases = (
+				0634D139280E14BAD4C5A3A6 /* [CP] Check Pods Manifest.lock */,
+				B537EA73212AF8F8003A353A /* Sources */,
+				B537EA74212AF8F8003A353A /* Frameworks */,
+				B537EA75212AF8F8003A353A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B537EA79212AF8F8003A353A /* PBXTargetDependency */,
+			);
+			name = "mobilicard-printerUITests";
+			productName = "mobilicard-printerUITests";
+			productReference = B537EA77212AF8F8003A353A /* mobilicard-printerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B537EA4D212AF8F4003A353A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Josh Sorokin";
+				TargetAttributes = {
+					B537EA54212AF8F4003A353A = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					B537EA6B212AF8F8003A353A = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = B537EA54212AF8F4003A353A;
+					};
+					B537EA76212AF8F8003A353A = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = B537EA54212AF8F4003A353A;
+					};
+				};
+			};
+			buildConfigurationList = B537EA50212AF8F4003A353A /* Build configuration list for PBXProject "mobilicard-printer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B537EA4C212AF8F4003A353A;
+			productRefGroup = B537EA56212AF8F4003A353A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B537EA54212AF8F4003A353A /* mobilicard-printer */,
+				B537EA6B212AF8F8003A353A /* mobilicard-printerTests */,
+				B537EA76212AF8F8003A353A /* mobilicard-printerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B537EA53212AF8F4003A353A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B537EA66212AF8F7003A353A /* LaunchScreen.storyboard in Resources */,
+				B537EA63212AF8F7003A353A /* Assets.xcassets in Resources */,
+				B537EA5E212AF8F4003A353A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B537EA6A212AF8F8003A353A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B537EA75212AF8F8003A353A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0634D139280E14BAD4C5A3A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mobilicard-printerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9784CD1C76BA2DAFF5A6B8A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mobilicard-printerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9375EB5CEBD531CD7D1C0C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mobilicard-printer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDFCF5B2613BACCE0A338CC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mobilicard-printer/Pods-mobilicard-printer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobilicard-printer/Pods-mobilicard-printer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B537EA51212AF8F4003A353A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5CED540212EBC6000131C8C /* TestData2.swift in Sources */,
+				B537EA61212AF8F4003A353A /* mobilicard_printer.xcdatamodeld in Sources */,
+				B537EA5B212AF8F4003A353A /* FrontPageViewController.swift in Sources */,
+				B537EA8E212B4486003A353A /* ListViewController.swift in Sources */,
+				B5CED53E212E0B4100131C8C /* JobModel.swift in Sources */,
+				B537EA59212AF8F4003A353A /* AppDelegate.swift in Sources */,
+				B537EA90212B5C2C003A353A /* ListTableViewCell.swift in Sources */,
+				B5CED546213C819000131C8C /* Backup.swift in Sources */,
+				B5E275432157C35600B00AE8 /* ReleaseJobModel.swift in Sources */,
+				B5CED542212EDABC00131C8C /* Ping.swift in Sources */,
+				B5CED544213C5CC000131C8C /* GetJobData.swift in Sources */,
+				B5E2754721583D7200B00AE8 /* SelectAllTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B537EA68212AF8F8003A353A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B537EA71212AF8F8003A353A /* mobilicard_printerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B537EA73212AF8F8003A353A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B537EA7C212AF8F8003A353A /* mobilicard_printerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B537EA6E212AF8F8003A353A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B537EA54212AF8F4003A353A /* mobilicard-printer */;
+			targetProxy = B537EA6D212AF8F8003A353A /* PBXContainerItemProxy */;
+		};
+		B537EA79212AF8F8003A353A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B537EA54212AF8F4003A353A /* mobilicard-printer */;
+			targetProxy = B537EA78212AF8F8003A353A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B537EA5C212AF8F4003A353A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B537EA5D212AF8F4003A353A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B537EA64212AF8F7003A353A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B537EA65212AF8F7003A353A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B537EA7E212AF8F8003A353A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B537EA7F212AF8F8003A353A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B537EA81212AF8F8003A353A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4284A415DC83ACF1028CCE5B /* Pods-mobilicard-printer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34B6F29UT3;
+				INFOPLIST_FILE = "mobilicard-printer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Enjeera-Interactive-Inc..mobilicard-printer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B537EA82212AF8F8003A353A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA11E952FCE56D2AAC37DC97 /* Pods-mobilicard-printer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34B6F29UT3;
+				INFOPLIST_FILE = "mobilicard-printer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Enjeera-Interactive-Inc..mobilicard-printer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B537EA84212AF8F8003A353A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC29786F8C4DF50319B049D1 /* Pods-mobilicard-printerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34B6F29UT3;
+				INFOPLIST_FILE = "mobilicard-printerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Enjeera-Interactive-Inc..mobilicard-printerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mobilicard-printer.app/mobilicard-printer";
+			};
+			name = Debug;
+		};
+		B537EA85212AF8F8003A353A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7129DE58AB1CB0EDE14F9CCB /* Pods-mobilicard-printerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34B6F29UT3;
+				INFOPLIST_FILE = "mobilicard-printerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Enjeera-Interactive-Inc..mobilicard-printerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mobilicard-printer.app/mobilicard-printer";
+			};
+			name = Release;
+		};
+		B537EA87212AF8F8003A353A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63C2597D61BB56CA7E6B375A /* Pods-mobilicard-printerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34B6F29UT3;
+				INFOPLIST_FILE = "mobilicard-printerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Enjeera-Interactive-Inc..mobilicard-printerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "mobilicard-printer";
+			};
+			name = Debug;
+		};
+		B537EA88212AF8F8003A353A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 609B862E8DE990F7B7844157 /* Pods-mobilicard-printerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34B6F29UT3;
+				INFOPLIST_FILE = "mobilicard-printerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Enjeera-Interactive-Inc..mobilicard-printerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "mobilicard-printer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B537EA50212AF8F4003A353A /* Build configuration list for PBXProject "mobilicard-printer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B537EA7E212AF8F8003A353A /* Debug */,
+				B537EA7F212AF8F8003A353A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B537EA80212AF8F8003A353A /* Build configuration list for PBXNativeTarget "mobilicard-printer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B537EA81212AF8F8003A353A /* Debug */,
+				B537EA82212AF8F8003A353A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B537EA83212AF8F8003A353A /* Build configuration list for PBXNativeTarget "mobilicard-printerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B537EA84212AF8F8003A353A /* Debug */,
+				B537EA85212AF8F8003A353A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B537EA86212AF8F8003A353A /* Build configuration list for PBXNativeTarget "mobilicard-printerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B537EA87212AF8F8003A353A /* Debug */,
+				B537EA88212AF8F8003A353A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B537EA5F212AF8F4003A353A /* mobilicard_printer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B537EA60212AF8F4003A353A /* mobilicard_printer.xcdatamodel */,
+			);
+			currentVersion = B537EA60212AF8F4003A353A /* mobilicard_printer.xcdatamodel */;
+			path = mobilicard_printer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B537EA4D212AF8F4003A353A /* Project object */;
+}
