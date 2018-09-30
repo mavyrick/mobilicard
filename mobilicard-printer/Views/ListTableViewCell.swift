@@ -65,7 +65,7 @@ class ListTableViewCell: UITableViewCell {
     
     func selectAllUI() {
         
-        selectAllText?.text = "Select All - \(jobData?.num_of_jobs ?? "") Documents"
+        selectAllText?.text = "Select All - \(jobData?.num_of_jobs ?? 0) Documents"
         
     }
     

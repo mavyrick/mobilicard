@@ -51,6 +51,8 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(jobData)
+        
         listTableView.delegate = self as UITableViewDelegate
         listTableView.dataSource = self as UITableViewDataSource
         
@@ -224,7 +226,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
             totalCost.text = "0.00 ILS"
         } else {
             sender.isSelected = true
-            let totalCostDouble = Double(Int(jobData?.total_cost ?? "0") ?? 0)
+            let totalCostDouble = Double(jobData?.total_cost ?? 0)
             let totalCostValue = String(format: "%.2f", (totalCostDouble / Double(100)))
             totalCost.text = "\(totalCostValue) ILS"
         }
@@ -277,7 +279,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         for cell in cells {
             
             if cell.checkbox?.isSelected ?? false {
-                //            if sender.isSelected {
+                //                            if sender.isSelected {
                 checkedItems.insert(Int(cell.job?.price ?? "") ?? 0, at: 0)
                 jobidArray.insert(cell.job?.jobid ?? "", at :0)
                 //                print(jobidArray)
@@ -506,48 +508,59 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         activityIndicator.isHidden = false
         
         if jobidArray.count == 0 {
-            self.releaseAlert(message: "No documents selected!")
+            self.oneButtonAlert(message: "No documents selected!")
         } else {
+            confirm()
+        }
+    }
+    
+    func tryRelease() {
+        
+        releaseJob() {
             
-            releaseJob() {
-                
-                print(self.releaseJobData?.ret_code)
-                
-                self.activityIndicator.isHidden = true
-                
-                switch self.releaseJobData?.ret_code {
-                case 200:
-                    self.performSegue(withIdentifier: "ListSegue", sender: self)
-                case 500:
-                    self.releaseAlert(message: "Request includes illegal job id")
-                case 402:
-                    self.releaseAlert(message: "Insufficient credit => User balance too low")
-                default:
-                    self.releaseAlert(message: "Unknown error from Gespage server")
-                    
-                }
+            print(self.releaseJobData?.ret_code)
+            
+            self.activityIndicator.isHidden = true
+            
+            switch self.releaseJobData?.ret_code {
+            case 200:
+                self.performSegue(withIdentifier: "ListSegue", sender: self)
+            case 500:
+                self.oneButtonAlert(message: "Request includes illegal job id")
+            case 402:
+                self.balanceAlert()
+            default:
+                self.oneButtonAlert(message: "Unknown error from Gespage server")
                 
             }
-            
         }
+    }
+    
+    func confirm() {
+        
+        let alert = UIAlertController(title: "Please Confirm", message: "Are you sure you want to print the selected document(s)?", preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
+            self.tryRelease()
+        }))
+        alert.addAction(UIAlertAction(title: "No", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
         
     }
     
-    func releaseAlert(message: String) {
+    func oneButtonAlert(message: String) {
         
-        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-            switch action.style{
-            case .default:
-                print("default")
-                
-            case .cancel:
-                print("cancel")
-                
-            case .destructive:
-                print("destructive")
-                
-            }}))
+        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
+    func balanceAlert() {
+        
+        let alert = UIAlertController(title: "Alert", message: "Insufficient credit => User balance too low", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Add Funds", style: .default, handler: { action in
+        }))
+        alert.addAction(UIAlertAction(title: "Not Now", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
         
     }

@@ -6,8 +6,8 @@ struct JobModel : Codable {
     let device_token : String?
     let user_token : String?
     let mobile_number : String?
-    let num_of_jobs : String?
-    let total_cost : String?
+    let num_of_jobs : Int?
+    let total_cost : Int?
     let jobs : [Jobs]?
     
     enum CodingKeys: String, CodingKey {
@@ -29,8 +29,8 @@ struct JobModel : Codable {
         device_token = try values.decodeIfPresent(String.self, forKey: .device_token)
         user_token = try values.decodeIfPresent(String.self, forKey: .user_token)
         mobile_number = try values.decodeIfPresent(String.self, forKey: .mobile_number)
-        num_of_jobs = try values.decodeIfPresent(String.self, forKey: .num_of_jobs)
-        total_cost = try values.decodeIfPresent(String.self, forKey: .total_cost)
+        num_of_jobs = try values.decodeIfPresent(Int.self, forKey: .num_of_jobs)
+        total_cost = try values.decodeIfPresent(Int.self, forKey: .total_cost)
         jobs = try values.decodeIfPresent([Jobs].self, forKey: .jobs)
     }
     
