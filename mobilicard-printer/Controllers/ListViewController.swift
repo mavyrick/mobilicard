@@ -6,7 +6,6 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var jobData: JobModel? {
         didSet {
             //            self.listTableView.reloadData()
-            print("jobData test 4")
             print(jobData)
         }
     }
@@ -14,28 +13,6 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var jobs: Jobs?
     var releaseJobData: ReleaseJobModel?
     
-    //    var cells = [ListTableViewCell]()
-    
-    //    var jobData: JobModel
-    //
-    //    init(jobData: JobModel) {
-    //        self.jobData = jobData
-    //        super.init(jobData: jobData)
-    //    }
-    //
-    //    required init?(coder aDecoder: NSCoder) {
-    //        super.init(coder: aDecoder)
-    //
-    //        fatalError("init(coder:) has not been implemented")
-    //    }
-    
-    //
-    //    required init?(coder aDecoder: NSCoder) {
-    //        fatalError("init(coder:) has not been implemented")
-    //    }
-    
-    //    var jobData: JobModel?
-    //    var jobData: JobModel = JobModel(from: try JSONDecoder)
     
     @IBOutlet weak var listTableView: UITableView!
     @IBOutlet weak var selectAllCell: ListTableViewCell!
@@ -56,11 +33,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         listTableView.delegate = self as UITableViewDelegate
         listTableView.dataSource = self as UITableViewDataSource
         
-        //        listTableView?.dataSource = jobData
-        
         totalCost.text = "0.00 ILS"
-        
-        totalCost2()
         
         self.sendButton.layer.cornerRadius = 5
         self.refreshButton.layer.cornerRadius = 5
@@ -69,123 +42,16 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
     }
     
-    //    func getJobData(completed: @escaping () -> ()) {
-    //
-    //        let parameters: [String: Any] = [
-    //            "password": Constants.RequestPassword,
-    //            "mobile_number": "0542323420",
-    //            "machine_id": 0000,
-    //            "operator_id": 0
-    //        ]
-    //
-    //        guard let testURL = URL(string: Constants.PrintRequestURL) else { return }
-    //
-    //        var request = URLRequest(url: testURL)
-    //
-    //        request.httpMethod = "POST"
-    //        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-    //
-    //        guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else { return }
-    //
-    //        print(httpBody)
-    //
-    //        request.httpBody = httpBody
-    //
-    //        let session = URLSession.shared
-    //
-    //        let task = session.dataTask(with: request) { (data, response, error) in
-    //
-    //            guard error == nil else {
-    //                print("error 1")
-    //                print(error!)
-    //                return
-    //            }
-    //            guard let data = data else { return }
-    //
-    //            do {
-    //
-    //                let decoder = JSONDecoder()
-    //                let jobDataTest = try decoder.decode(JobModel.self, from: data)
-    //                self.jobData = jobDataTest
-    //
-    //                print(self.jobData?.jobs?[0].jobid)
-    //                //                print(self.jobData[0].jobs?[0].title)
-    //                //                print(Int((jobDataTest.jobs?.count)!))
-    //                //                print(jobDataTest.jobs?[0].checkbox)
-    //                //                self.jobData = jobDataTest.jobs
-    //                //                print(jobDataTest.jobs?[0].title)
-    //                //                print(self.jobData)
-    //                //                print(self.jobData)
-    //
-    //                //                self.totalCost.text = self.jobData?.total_cost
-    //
-    //                DispatchQueue.main.async {
-    //
-    //                    completed()
-    //
-    //                    self.activityIndicator.isHidden = true
-    //
-    //                    self.totalCost.text = "\(self.jobData?.total_cost ?? "0") ILS"
-    //
-    //                    self.listTableView.reloadData()
-    //
-    //                    print(self.jobData?.ret_code)
-    //
-    //                    if self.jobData?.ret_code != 200 {
-    //                        self.noJobs.isHidden = false
-    //                        self.refreshButton.isHidden = false
-    //                    }
-    //
-    //                    print("tokens")
-    //                    print(self.jobData?.total_cost)
-    //                    print((self.jobData?.user_token)!)
-    //                    print((self.jobData?.device_token)!)
-    //
-    //                }
-    //                return
-    //            } catch let err {
-    //                print("Err", err)
-    //            }
-    //
-    //        }
-    //        task.resume()
-    //
-    //    }
-    
     @IBAction func refreshButton(_ sender: UIButton) {
-        
-        //        getJobData() {
-        //            self.listTableView.reloadData()
-        //        }
         
         noJobs.isHidden = true
         refreshButton.isHidden = true
         activityIndicator.isHidden = false
     }
     
-    
-    //    var printOrCopy = FrontPageViewController().printOrCopy
-    //
-    //    var printOrCopyTest = ""
-    
     var printOrCopy = "test"
-    //
-    
-    //    var printOrCopy = FrontPageViewController().printOrCopy
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        
-        //        var printOrCopyText = ""
-        //
-        //        if printOrCopy == true {
-        //            printOrCopyText = "Print"
-        //        } else {
-        //            printOrCopyText = "Copy"
-        //        }
-        
-        //        return "Documents to \(printOrCopy)"
-        
-        //        let section = self.sections[section]
         
         if (section == 1) {
             return nil
@@ -243,11 +109,8 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
             if sender.isSelected {
                 cell.checkbox?.isSelected = true
                 jobidArray.insert(cell.job?.jobid ?? "", at :0)
-                //                print(jobidArray)
             } else {
                 cell.checkbox?.isSelected = false
-                //                jobidArray = []
-                //                print(jobidArray)
             }
             
         }
@@ -282,20 +145,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 //                            if sender.isSelected {
                 checkedItems.insert(Int(cell.job?.price ?? "") ?? 0, at: 0)
                 jobidArray.insert(cell.job?.jobid ?? "", at :0)
-                //                print(jobidArray)
             }
-            //            } else {
-            //                if let index = jobidArray.index(of: cell.job?.jobid ?? "") {
-            //                    jobidArray.remove(at: index)
-            //                }
-            ////                print(jobidArray)
-            //            }
-            
-            //            if checkedItems.count != jobData?.jobs?.count {
-            //                cell.selectAllCheckbox?.isSelected = false
-            //            } else if (checkedItems.count + 1) == jobData?.jobs?.count {
-            //                cell.selectAllCheckbox?.isSelected = true
-            //            }
             
             if checkedItems.count != jobData?.jobs?.count {
                 selectAllCell?.selectAllCheckbox?.isSelected = false
@@ -316,38 +166,9 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
     }
     
-    //    @IBAction func checkboxChecked(_ sender: Any) {
-    //
-    //        print(listTableView.numberOfRows(inSection: 1))
-    //
-    //        let totalRows = listTableView.numberOfRows(inSection: 1)
-    ////        for row in 0..<totalRows {
-    ////            //            let cell = listTableView.selectRow(at: IndexPath(row: row, section: 1), animated: false, scrollPosition: .none)
-    ////
-    ////        }
-    //
-    //        if sender.isSelected {
-    //                        sender.isSelected = false
-    //                        jobData?.jobs?[0].checkbox = false
-    //                        print(jobData?.jobs?[0].checkbox)
-    //                        print(sender)
-    //                    } else {
-    //                        sender.isSelected = true
-    //                        jobData?.jobs?[0].checkbox = true
-    //                        print(jobData?.jobs?[0].checkbox)
-    //                    }
-    //
-    //                }
-    //
-    //    }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         var cell: ListTableViewCell!
-        
-        //        let document = listTableView.dequeueReusableCell(withIdentifier: "Document", for: indexPath) as! ListTableViewCell
-        
-        //        let selectAll = listTableView.dequeueReusableCell(withIdentifier: "SelectAll", for: indexPath) as! ListTableViewCell
         
         if (indexPath.section == 0) {
             
@@ -358,20 +179,9 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
             
             cell = listTableView.dequeueReusableCell(withIdentifier: "Document", for: indexPath) as! ListTableViewCell
             cell.job = jobData?.jobs?[indexPath.row]
-            
-            //            cells.insert(cell ?? ListTableViewCell(), at :0)
         }
         
         cell.selectionStyle = .none
-        
-        //        cell.title?.text = jobData?.jobs?[indexPath.row].title
-        //        cell.jobid?.text = jobData?.jobs?[indexPath.row].jobid
-        //        cell.numPages?.text = jobData?.jobs?[indexPath.row].pages_nb
-        //        cell.jobPrice?.text = jobData?.jobs?[indexPath.row].price
-        
-        //        totalCost.text = "$\(jobData?.total_cost!)"
-        
-        //        var jobPriceArray = [jobData?.jobs?[indexPath.row].title]
         
         var jobPriceArray = NSMutableArray()
         
@@ -379,69 +189,10 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         print(jobPriceArray)
         
-        //        for i in Int(jobData?.jobs?[indexPath.row].price) {
-        //
-        //            print(i)
-        //
-        //
-        //        }
-        
-        //        print(Int((jobData?.jobs?[indexPath.row].price)!).reduce(0, +))
-        
-        //        totalCost.text = jobData
-        
-        print("test tableview 123")
-        print(cell)
         return cell
         
     }
     
-    func totalCost2() {
-        
-        print(jobData?.jobs?[0].jobid)
-        
-        
-        for i in 0...1 {
-            
-            print(jobData?.jobs?[i].jobid)
-            
-        }
-        
-    }
-    
-    //    @IBAction func checkBoxChecked(_ sender: UIButton) {
-    //
-    //        if sender.isSelected {
-    //            sender.isSelected = false
-    //            jobData?.jobs?[0].checkbox = false
-    //            print(jobData?.jobs?[0].checkbox)
-    //            print(sender)
-    //        } else {
-    //            sender.isSelected = true
-    //            jobData?.jobs?[0].checkbox = true
-    //            print(jobData?.jobs?[0].checkbox)
-    //        }
-    //
-    //    }
-    
-    
-    //    @IBAction func selectAllCheckBoxChecked(_ sender: UIButton) {
-    //
-    //        if sender.isSelected {
-    //            selectAllCheckbox.isSelected = false
-    ////            selectAllCheckBox.isSelected = false
-    ////            sender.isSelected = false
-    //        } else {
-    //            selectAllCheckbox.isSelected = true
-    //
-    ////            selectAllCheckBox.isSelected = true
-    ////            sender.isSelected = true
-    //
-    //        }
-    //
-    //    }
-    
-    //    func releaseJob(completed: @escaping () -> ()) {
     func releaseJob(completed: @escaping () -> ()) {
         
         let parameters: [String: Any] = [

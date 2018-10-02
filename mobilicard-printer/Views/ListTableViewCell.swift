@@ -10,22 +10,6 @@ class ListTableViewCell: UITableViewCell {
     @IBOutlet weak var selectAllCheckbox: UIButton!
     @IBOutlet weak var selectAllText: UILabel!
     
-    //    @IBAction func checkboxChecked(_ sender: UIButton) {
-    //
-    //        checkbox?.isSelected = true        
-    //
-    ////        if sender.isSelected {
-    ////            sender.isSelected = false
-    //////            jobData?.jobs?[0].checkbox = false
-    //////            print(jobData?.jobs?[0].checkbox)
-    ////            print(sender)
-    ////        } else {
-    ////            sender.isSelected = true
-    //////            jobData?.jobs?[0].checkbox = true
-    //////            print(jobData?.jobs?[0].checkbox)
-    ////        }
-    //    }
-    
     var job: Jobs? {
         didSet {
             self.updateUI()

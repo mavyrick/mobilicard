@@ -7,66 +7,13 @@ class FrontPageViewController: UIViewController {
     @IBOutlet weak var copyButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    var pingData = [Ping]()
-    
-    func ping() {
-        
-        print("test")
-        
-        guard let testURL = URL(string: "https://vend.mobilicard.com/external/rs/public/ping") else { return }
-        
-        var request = URLRequest(url: testURL)
-        
-        request.httpMethod = "GET"
-        //                request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-        let session = URLSession.shared
-        
-        print("test1")
-        
-        let task = session.dataTask(with: request) { (data, response, error) in
-            
-            guard error == nil else {
-                print("error 1")
-                print(error!)
-                return
-            }
-            guard let responseData = data else {
-                print("testtest")
-                return
-                
-            }
-            
-            do {
-                let decoder = JSONDecoder()
-                let pingData = try decoder.decode(Ping.self, from: data!)
-                
-                DispatchQueue.main.async {
-                    
-                }
-                
-                return
-                
-            } catch let err {
-                print("Err", err)
-            }
-            
-        }
-        task.resume()
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         self.printButton.layer.cornerRadius = 5
         self.copyButton.layer.cornerRadius = 5
         
-        ping()
-        
     }
-    
-    var printOrCopy = "test"
     
     var jobData: JobModel?
     
@@ -110,15 +57,6 @@ class FrontPageViewController: UIViewController {
                 self.jobData = jobDataTest
                 
                 print(self.jobData?.jobs?[0].jobid)
-                //                print(self.jobData[0].jobs?[0].title)
-                //                print(Int((jobDataTest.jobs?.count)!))
-                //                print(jobDataTest.jobs?[0].checkbox)
-                //                self.jobData = jobDataTest.jobs
-                //                print(jobDataTest.jobs?[0].title)
-                //                print(self.jobData)
-                //                print(self.jobData)
-                
-                //                self.totalCost.text = self.jobData?.total_cost
                 
                 DispatchQueue.main.async {
                     
@@ -131,6 +69,7 @@ class FrontPageViewController: UIViewController {
             }
             
         }
+        
         task.resume()
         
     }
@@ -164,20 +103,9 @@ class FrontPageViewController: UIViewController {
             
         }
         
-        
-        
-        //        printOrCopy = "print"
-        //        print(printOrCopy)
-        
-        //        let vc = ListViewController(nibName: "ListViewController", bundle: nil)
-        //        vc.printOrCopy = "print"
-        //        print(vc.printOrCopy)
-        //
-        //        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func copyDocuments(_ sender: UIButton) {
-        //        printOrCopy = "copy"
     }
     
     func getJobDataAlert(message: String) {
@@ -188,24 +116,9 @@ class FrontPageViewController: UIViewController {
         
     }
     
-    //    http://gvs.mobilicard.com/scopos/pages/do_print_request.php
-    
-    //    http://gvs.mobilicard.com/scopos/pages/do_print.php
-    
-    //    gvs.mobilicard.com/scopos/external/rs/public/ping
-    
-    //    put request
-    //    gvs.mobilicard.com/scopos/external/rs/public/user_get_info
-    //    json params:
-    
-    //    gvs.mobilicard.com/scopos/external/rs/public/user_get_info.php
-    
-    //    005493
-    
     private struct Constants {
         static let PrintRequestURL = "https://gvs.mobilicard.com/external/rs/public/do_print_request"
         static let RequestPassword = "!dneviliboM@"
-        static let ReleaseJobURL =  "https://gvs.mobilicard.com/external/rs/public/do_release_job"
     }
 }
 

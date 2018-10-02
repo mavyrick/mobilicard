@@ -21,10 +21,6 @@
 		B537EA8E212B4486003A353A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537EA8D212B4486003A353A /* ListViewController.swift */; };
 		B537EA90212B5C2C003A353A /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537EA8F212B5C2C003A353A /* ListTableViewCell.swift */; };
 		B5CED53E212E0B4100131C8C /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CED53D212E0B4000131C8C /* JobModel.swift */; };
-		B5CED540212EBC6000131C8C /* TestData2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CED53F212EBC6000131C8C /* TestData2.swift */; };
-		B5CED542212EDABC00131C8C /* Ping.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CED541212EDABC00131C8C /* Ping.swift */; };
-		B5CED544213C5CC000131C8C /* GetJobData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CED543213C5CC000131C8C /* GetJobData.swift */; };
-		B5CED546213C819000131C8C /* Backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CED545213C819000131C8C /* Backup.swift */; };
 		B5E275432157C35600B00AE8 /* ReleaseJobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E275422157C35600B00AE8 /* ReleaseJobModel.swift */; };
 		B5E2754721583D7200B00AE8 /* SelectAllTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E2754621583D7200B00AE8 /* SelectAllTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -72,10 +68,6 @@
 		B537EA8D212B4486003A353A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		B537EA8F212B5C2C003A353A /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		B5CED53D212E0B4000131C8C /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
-		B5CED53F212EBC6000131C8C /* TestData2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData2.swift; sourceTree = "<group>"; };
-		B5CED541212EDABC00131C8C /* Ping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ping.swift; sourceTree = "<group>"; };
-		B5CED543213C5CC000131C8C /* GetJobData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetJobData.swift; sourceTree = "<group>"; };
-		B5CED545213C819000131C8C /* Backup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backup.swift; sourceTree = "<group>"; };
 		B5E275422157C35600B00AE8 /* ReleaseJobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseJobModel.swift; sourceTree = "<group>"; };
 		B5E2754621583D7200B00AE8 /* SelectAllTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAllTableViewCell.swift; sourceTree = "<group>"; };
 		FA11E952FCE56D2AAC37DC97 /* Pods-mobilicard-printer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilicard-printer.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobilicard-printer/Pods-mobilicard-printer.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,10 +143,6 @@
 				B537EA8B212AFED9003A353A /* Views */,
 				B537EA8C212AFEE5003A353A /* Controllers */,
 				B537EA58212AF8F4003A353A /* AppDelegate.swift */,
-				B5CED543213C5CC000131C8C /* GetJobData.swift */,
-				B5CED545213C819000131C8C /* Backup.swift */,
-				B5CED541212EDABC00131C8C /* Ping.swift */,
-				B5CED53F212EBC6000131C8C /* TestData2.swift */,
 				B537EA62212AF8F7003A353A /* Assets.xcassets */,
 				B537EA67212AF8F7003A353A /* Info.plist */,
 				B537EA5F212AF8F4003A353A /* mobilicard_printer.xcdatamodeld */,
@@ -445,17 +433,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5CED540212EBC6000131C8C /* TestData2.swift in Sources */,
 				B537EA61212AF8F4003A353A /* mobilicard_printer.xcdatamodeld in Sources */,
 				B537EA5B212AF8F4003A353A /* FrontPageViewController.swift in Sources */,
 				B537EA8E212B4486003A353A /* ListViewController.swift in Sources */,
 				B5CED53E212E0B4100131C8C /* JobModel.swift in Sources */,
 				B537EA59212AF8F4003A353A /* AppDelegate.swift in Sources */,
 				B537EA90212B5C2C003A353A /* ListTableViewCell.swift in Sources */,
-				B5CED546213C819000131C8C /* Backup.swift in Sources */,
 				B5E275432157C35600B00AE8 /* ReleaseJobModel.swift in Sources */,
-				B5CED542212EDABC00131C8C /* Ping.swift in Sources */,
-				B5CED544213C5CC000131C8C /* GetJobData.swift in Sources */,
 				B5E2754721583D7200B00AE8 /* SelectAllTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
