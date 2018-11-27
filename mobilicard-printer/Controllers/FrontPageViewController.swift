@@ -117,8 +117,8 @@ class FrontPageViewController: UIViewController {
     }
     
     private struct Constants {
-        static let PrintRequestURL = "https://gvs.mobilicard.com/external/rs/public/do_print_request"
-        static let RequestPassword = "!dneviliboM@"
+        static let PrintRequestURL = // removed to protect sensitive information
+        static let RequestPassword = // removed to protect sensitive information
     }
 }
 
