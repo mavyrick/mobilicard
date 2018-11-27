@@ -317,9 +317,9 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     private struct Constants {
-        static let PrintRequestURL = "https://gvs.mobilicard.com/external/rs/public/do_print_request"
-        static let RequestPassword = "!dneviliboM@"
-        static let ReleaseJobURL =  "https://gvs.mobilicard.com/external/rs/public/do_release_job"
+        static let PrintRequestURL = // removed to protect sensitive information
+        static let RequestPassword = // removed to protect sensitive information
+        static let ReleaseJobURL =  // removed to protect sensitive information
     }
     
 }
